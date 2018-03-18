@@ -1,0 +1,56 @@
+* {
+box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+$color: #FF9966;
+.cont-margin {
+	margin: 5px;
+} 
+
+.app {
+	margin: 0 auto;
+	max-width: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+		.ContactForm {
+			flex-direction: column;
+			display: flex;
+			background-color: $color;
+			@extend .cont-margin;
+				input {
+				border: 1px red;
+				padding: 5px;
+				margin: 5px 10px;
+				}
+				button {
+				width: 35%;
+				padding: 10px 50px;
+				margin: 10px 5px 5px auto;
+				}
+		}
+		.contactList {
+			@extend .cont-margin;
+			background-color: $color;
+			padding: 0;
+				.contactItem {
+					margin: 5px 10px;
+					background-color: #BDBDBD;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+						.contactImage {
+						width: 25%;
+						height: 25%;
+						padding: 5px;
+						}
+						div {
+						margin-right: 30%;
+						}
+				}
+		}
+}
+
+
